@@ -10,7 +10,7 @@ import java.time.LocalDate;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Getter
 @Setter
-public class Pet {
+public class Pet extends BaseEntity {
     PetType petType;
     Owner owner;
     LocalDate birthDate;

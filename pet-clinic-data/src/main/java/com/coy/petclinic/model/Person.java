@@ -8,7 +8,7 @@ import lombok.experimental.FieldDefaults;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Getter
 @Setter
-public class Person {
+public class Person extends BaseEntity {
     String firstName;
     String lastName;
 }
