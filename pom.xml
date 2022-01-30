@@ -5,7 +5,8 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>sect4</module>
-	</modules>
+        <module>fp-pet-clinic</module>
+    </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
