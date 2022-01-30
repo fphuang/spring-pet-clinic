@@ -5,7 +5,8 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>sect4</module>
-        <module>fp-pet-clinic</module>
+        <module>pet-clinic-data</module>
+        <module>pet-clinic-web</module>
     </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -80,6 +81,16 @@
 						</exclude>
 					</excludes>
 				</configuration>
+<!--				<executions>-->
+<!--					<execution>-->
+<!--						<goals>-->
+<!--							<goal>repackage</goal>-->
+<!--						</goals>-->
+<!--						<configuration>-->
+<!--							<skip>true</skip>-->
+<!--						</configuration>-->
+<!--					</execution>-->
+<!--				</executions>-->
 			</plugin>
 		</plugins>
 	</build>

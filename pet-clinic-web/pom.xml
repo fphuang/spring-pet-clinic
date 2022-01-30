@@ -9,7 +9,15 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>fp-pet-clinic</artifactId>
+    <artifactId>pet-clinic-web</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.coy</groupId>
+            <artifactId>pet-clinic-data</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
