@@ -1,6 +1,7 @@
 package com.coy.sect4;
 
 import com.coy.sect4.controllers.*;
+import com.coy.sect4.services.LifeCycleDemoBean;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -9,6 +10,11 @@ import org.springframework.context.ApplicationContext;
 public class Application {
     public static void main(String[] args) {
         ApplicationContext ctx = SpringApplication.run(Application.class, args);
+        demo1(ctx);
+        demo2(ctx);
+    }
+
+    private static void demo1(ApplicationContext ctx ) {
 
         System.out.println("------- I18N");
         I18NController i18NController = (I18NController) ctx.getBean(("i18nController"));
@@ -29,5 +35,11 @@ public class Application {
         System.out.println("------- constructor");
         var constructorInjectedController = (ConstructorInjectedController) ctx.getBean("constructorInjectedController");
         System.out.println(constructorInjectedController.getGreeting());
+    }
+
+    private static void demo2(ApplicationContext ctx ) {
+
+        System.out.println("------- demo2");
+        LifeCycleDemoBean demoBean = (LifeCycleDemoBean) ctx.getBean(("lifeCycleDemoBean"));
     }
 }
