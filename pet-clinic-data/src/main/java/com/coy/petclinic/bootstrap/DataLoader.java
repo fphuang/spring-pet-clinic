@@ -1,12 +1,9 @@
 package com.coy.petclinic.bootstrap;
 
 import com.coy.petclinic.model.Owner;
-import com.coy.petclinic.model.Pet;
 import com.coy.petclinic.model.Vet;
 import com.coy.petclinic.services.OwnerService;
 import com.coy.petclinic.services.VetService;
-import com.coy.petclinic.services.map.OwnerServiceMap;
-import com.coy.petclinic.services.map.VetServiceMap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
