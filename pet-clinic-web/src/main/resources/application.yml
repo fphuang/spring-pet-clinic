@@ -1,0 +1,7 @@
+#spring:
+#  banner:
+#    image:
+#      location: puppy.jpeg
+
+server:
+  port: 8090
