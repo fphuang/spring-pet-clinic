@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: prod
+
+guru:
+  username: super
+  password: password
+  jdbc_url: mysql
+
+---
+spring:
+  profiles: prod
+
+guru:
+  username: super-prod
+  password: password-prod
+  jdbc_url: mysql-prod
+

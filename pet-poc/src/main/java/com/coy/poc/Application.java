@@ -1,5 +1,7 @@
 package com.coy.poc;
 
+import com.coy.poc.config.DiconstructorConfig;
+import com.coy.poc.datasource.FakeDataSource;
 import com.coy.poc.services.PrototypeBean;
 import com.coy.poc.services.SingletonBean;
 import org.springframework.boot.SpringApplication;
@@ -12,7 +14,7 @@ import javax.swing.*;
 public class Application {
     public static void main(String[] args) {
         final ApplicationContext ctx = SpringApplication.run(Application.class, args);
-        demo1(ctx);
+        demo3(ctx);
     }
 
     private static void demo1(ApplicationContext ctx) {
@@ -26,5 +28,21 @@ public class Application {
         System.out.println(pt1.getMyScope());
         PrototypeBean pt2 = ctx.getBean(PrototypeBean.class);
         System.out.println(pt2.getMyScope());
+    }
+
+    private static void demo2(ApplicationContext ctx) {
+        System.out.println("----- fake data source");
+        FakeDataSource fakeDataSource = ctx.getBean((FakeDataSource.class));
+        System.out.println(fakeDataSource.getUserName());
+        System.out.println(fakeDataSource.getPassword());
+        System.out.println(fakeDataSource.getJdbcUrl());
+    }
+
+    private static void demo3(ApplicationContext ctx) {
+        System.out.println("----- constructor Binding");
+        DiconstructorConfig config = ctx.getBean(DiconstructorConfig.class);
+        System.out.println(config.getUserName());
+        System.out.println(config.getPassword());
+        System.out.println(config.getJdbcUrl());
     }
 }
