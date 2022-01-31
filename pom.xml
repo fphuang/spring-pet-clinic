@@ -8,6 +8,7 @@
         <module>pet-clinic-data</module>
         <module>pet-clinic-web</module>
         <module>poc</module>
+        <module>pet-recipe</module>
     </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
