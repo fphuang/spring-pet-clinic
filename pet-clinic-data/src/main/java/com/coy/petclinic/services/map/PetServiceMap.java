@@ -2,11 +2,14 @@ package com.coy.petclinic.services.map;
 
 import com.coy.petclinic.model.Pet;
 import com.coy.petclinic.services.CrudeService;
+import com.coy.petclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long>
-        implements CrudeService<Pet, Long> {
+        implements PetService {
 
     @Override
     public Set<Pet> findAll() {

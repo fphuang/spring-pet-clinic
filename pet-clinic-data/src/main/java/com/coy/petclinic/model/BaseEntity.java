@@ -1,5 +1,6 @@
 package com.coy.petclinic.model;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 

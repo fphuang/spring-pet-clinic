@@ -7,6 +7,7 @@
 		<module>sect4</module>
         <module>pet-clinic-data</module>
         <module>pet-clinic-web</module>
+        <module>poc</module>
     </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
